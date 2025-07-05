@@ -339,24 +339,29 @@ var b = 1;
 
 //            TASK MO 05 
 
-// var subjectName_1 = prompt("Enter your Subjects Name!");
-// var subjectName_2 = prompt("Enter your Subjects Name!");
-// var subjectName_3 = prompt("Enter your Subjects Name!");
-// var subject_1 = subjectName_1;
-// var subject_2 = subjectName_2;
-// var subject_3 = subjectName_3;
-// var totalMarks = 300;
-// var obtainedMarks_1 = prompt("Enter obtained marks of " + subject_1);
-// var obtainedMarks_2 = prompt("Enter obtained marks of " + subject_2);
-// var obtainedMarks_3 = prompt("Enter obtained marks of " + subject_3);
-// var marks_obtained_1 = obtainedMarks_1;
-// var marks_obtained_2 = obtainedMarks_2;
-// var marks_obtained_3 = obtainedMarks_3;
-// var totalMarksObtained = obtainedMarks_1 + obtainedMarks_2 + obtainedMarks_3;
-// var percentageOfSubject_1 = obtainedMarks_1 / 100 * 100;
-// var percentageOfSubject_2 = obtainedMarks_2 / 100 * 100;
-// var percentageOfSubject_3 = obtainedMarks_3 / 100 * 100;
-// var TotalPercentage = totalMarksObtained / 300 * 100;
+var subjectName_1 = prompt("Enter your Subjects Name!");
+var subjectName_2 = prompt("Enter your Subjects Name!");
+var subjectName_3 = prompt("Enter your Subjects Name!");
+var subject_1 = subjectName_1;
+var subject_2 = subjectName_2;
+var subject_3 = subjectName_3;
+var totalMarks = 300;
+var obtainedMarks_1 = Number(prompt("Enter obtained marks of " + subject_1));
+var obtainedMarks_2 = Number(prompt("Enter obtained marks of " + subject_2));
+var obtainedMarks_3 = Number(prompt("Enter obtained marks of " + subject_3));
+var marks_obtained_1 = obtainedMarks_1;
+var marks_obtained_2 = obtainedMarks_2;
+var marks_obtained_3 = obtainedMarks_3;
+var totalMarksObtained = marks_obtained_1 + marks_obtained_2 + marks_obtained_3;
+var percentageOfSubject_1 = marks_obtained_1 / 100 * 100;
+var percentageOfSubject_2 = marks_obtained_2 / 100 * 100;
+var percentageOfSubject_3 = marks_obtained_3 / 100 * 100;
+var totalPercentage = totalMarksObtained / 300 * 100;
 
-document.write("<h1>Subjects &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Total Marks &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Obtained Marks &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Percentage</h1>")
-document.write(subject_1 + )
+
+document.write("<table border=1><tr><th> Subjects </th><th> Total Marks </th><th> Obtained Marks </th><th> Percentage </th></tr> <tr><td>" + subject_1 + "</td>" + "<td>100</td>" + "<td>" + marks_obtained_1 + "</td>" + "<td>" + percentageOfSubject_1 + "%" + "</td>" + "</tr> <tr><td>" + subject_2 + "</td>" + "<td>100</td>" + "<td>" + marks_obtained_2 + "</td>" + "<td>" + percentageOfSubject_2 + "%" + "</td>" + "</tr> <tr><td>" + subject_3 + "</td>" + "<td>100</td>" + "<td>" + marks_obtained_3 + "</td>" + "<td>" + percentageOfSubject_3 + "%" + "</td>" + "</tr>  <tr><td>" + " Total " + "</td>" + "<td>" + totalMarks + "</td>" + "<td>" + totalMarksObtained + "</td>" + "<td>" + totalPercentage + "%" + "</td>" + "</tr> </table>");
+
+
+
+
+
